@@ -1,0 +1,65 @@
+/*---------------------------------------INDEX------------------------------------------
+
+*1. -- Root --
+*2. -- Reset --
+
+
+*/
+
+/*------------------- *1. -- Root -- -----------------*/
+
+:root {
+
+    /*---- general ----*/
+
+    --bg-color: #141312;
+    --title-color: #e4dad1;
+    --text-color: #bab1a8;
+
+    /*---- buttons ----*/
+
+    /*- button primary -*/
+    --button-primary-bg: #cd412b;
+    --button-primary-hover: #b83a27;
+    --button-primary-text: #fff;
+    /*- button secondary -*/
+    --button-secondary-bg: #2a2928;
+    --button-secondary-border: 2px solid #4c4946;
+    --button-secondary-hover: #4c4946;
+    --button-secondary-text: #e4dad1;
+
+    /*---- banner ----*/
+
+    --banner-background: #1b1b1b;
+    /*---- tags ----*/
+    --tags-color-text: #e4dad1;
+    /*- tag name -*/
+    --tag-name-background: #5d7239;
+    --tag-name-background-hover: #4f6131;
+    /*- tag date -*/
+    --tag-date-background: #cd412b;
+
+    /*---- Twitch Drops ----*/
+
+    --twitch-drops-subtitle-color: #c8bbdc;
+
+    /*---- Footer ----*/
+    
+    --footer-background-top: #0c0b0b;
+    --footer-background-bottom-copyrigth: rgba(0,0,0,.2);
+
+}
+
+/*------------------- *2. -- Reset -- -----------------*/
+
+*, 
+::before, 
+::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+
+
