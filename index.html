@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>BDR - BANCO DE DATOS ROSARIO</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
@@ -28,7 +30,7 @@
             </article>
         </section>
 
-        <section class="about-us">
+        <section class="about-us container">
             <article class="about-us__content">
                 <div class="about-us__content--text">
                     <h2>Sobre Nosotros</h2>
@@ -43,7 +45,7 @@
             </article>
         </section>
 
-        <section class="our-services">
+        <section class="our-services container">
             <h3>Nuestros Servicios</h3>
             <article class="our-services__content">
                 <div class="our-services__content--card">
@@ -61,7 +63,7 @@
             </article>
         </section>
 
-        <section class="tipes">
+        <section class="tipes container">
             <h3>Tipos de Informes</h3>
             <article class="tipes__content">
                 <div class="tipes__content--card">
@@ -91,49 +93,91 @@
             </article>
         </section>
 
-        <section class="contact">
+        <section class="image-section image-medium img-with-pattern">
+            <div class="background-image" style="background-image: url(./assets/img/office-bg.jpg)"></div>
+        </section>
+
+        <section class="contact container">
             <article class="contact__social">
                 <h4>Contactanos</h4>
-                <p>Lorem ipsum dolor sit amet.</p>
-                <p>Lorem ipsum dolor sit amet.</p>
-                <p>Lorem ipsum dolor sit amet.</p>
-                <p>Lorem ipsum dolor sit amet.</p>
+                <div class="social-contact">
+                    <a href="#">
+                        <i class="bi bi-envelope"></i>
+                        <p>bdr@cpicon.com.ar</p>
+                    </a>
+                </div>
+                <div class="social-contact">
+                    <a href="#">
+                        <i class="bi bi-geo-alt"></i>
+                        <p>Urquiza 1179, Rosario</p>
+                    </a>
+                </div>
+                <div class="social-contact">
+                    <a href="#">
+                        <i class="bi bi-whatsapp"></i>
+                        <p>+543413665495</p>
+                    </a>
+                </div>
             </article>
-            <form action="" class="contact__form">
+            <form action="https://formsubmit.co/bdr@cpicon.com.ar" method="POST" class="contact__form">
                 <h4>Hacenos tu consulta</h4>
                 <div class="contact__form--content">
-                    <label for=""></label>
-                    <input type="text">
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" name="name" required>
                 </div>
                 <div class="contact__form--content">
-                    <label for=""></label>
-                    <input type="text">
+                    <label for="mail">Email</label>
+                    <input type="email" name="email" id="email" required>
                 </div>
                 <div class="contact__form--content">
-                    <label for=""></label>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <label for="message">Consulta</label>
+                    <textarea name="message" id="message" cols="30" rows="10"  required></textarea>
                 </div>
-                <button></button>
+                <input class="contact__form--button" type="submit" value="Enviar">
+
+                <!-- <input type="hidden" name="_next" value="dominio">
+                <input type="hidden" name="_captcha" value="false"> -->
             </form>
         </section>
 
-        <section class="static-image">
-            <img src="" alt="">
-        </section>
-
         <section class="location">
-
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.306551927407!2d-60.64059631778394!3d-32.94291501021137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab229f2e1151%3A0xa45457cd3a0794de!2sBDR%20Banco%20de%20Datos%20Rosario!5e0!3m2!1ses-419!2sus!4v1700847466144!5m2!1ses-419!2sus" width="" height="" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
 
     </main>
     <footer>
         <section class="footer">
             <article class="footer__navigation">
-                <img src="" alt="">
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                <div class="bg-logo">
+                    <img src="./assets/img/logo.png" alt="">
+                </div>
+                <ul class="footer__navigation--social">
+                    <li class="social-contact">
+                        <a href="#">
+                            <i class="bi bi-envelope"></i>
+                            <p>bdr@cpicon.com.ar</p>
+                        </a>
+                    </li>
+                    <li class="social-contact">
+                        <a href="#">
+                            <i class="bi bi-geo-alt"></i>
+                            <p>Urquiza 1179, Rosario</p>
+                        </a>
+                    </li>
+                    <li class="social-contact">
+                        <a href="#">
+                            <i class="bi bi-whatsapp"></i>
+                            <p>+543413665495</p>
+                        </a>
+                    </a>
+                    </li>
+                    <li class="social-contact">
+                        <a href="#">
+                            <i class="bi bi-instagram"></i>
+                            <p>BDR GESTORIA</p>
+                        </a>
+                    </a>
+                    </li>
                 </ul>
             </article>
             <article class="footer__content">
