@@ -54,6 +54,18 @@ ul, li {
     display: none;
 }
 
+.navbar__navigation--options {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.navbar__navigation--options a{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+
 @media screen and (max-width: 640px) {
     .abrir-cerrar-menu {
         display: block;
@@ -333,34 +345,36 @@ ul, li {
     flex-direction: column;
     padding: 1rem;
     gap: 1rem;
-
 }
 
 .contact__social {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: .5rem;
 }
 
 .contact__social h4 {
     font-size: 1.5rem;
-    padding-block: 1rem;
+    padding-block: .5rem;
     text-align: center;
 }
 
 .social-contact a{
     display: flex;
     flex-direction: row;
-    justify-content: start;
-    align-items: center;
+    text-align: start;
     gap: .5rem;
     text-decoration: none;
     color: #283629;
+    min-width: 185px;
 }
 
 .contact__form {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    width: 100%;
     gap: 1rem;
 }
 
@@ -389,6 +403,7 @@ input, textarea {
     background-color: #EDFFF0;
     border: 2px solid #F0FAF1;
     max-width: 600px;
+    min-width: 300px;
 }
 
 .contact__form--button {
@@ -405,13 +420,29 @@ input, textarea {
     transition: all 300ms;
 }
 
+@media screen and (min-width:576px) {
+    input, textarea {
+        min-width: 400px;
+    }
+}
+
 @media screen and (min-width:992px) {
     .contact {
         display: flex;
         flex-direction: row;
     }
+
+    input, textarea {
+        min-width: 600px;
+    }
 }
 
+@media screen and (min-width:1200px) {
+
+    input, textarea {
+        min-width: 800px;
+    }
+}
 /*------------------- *10. -- Location -- -----------------*/
 
 .location iframe{
