@@ -36,3 +36,21 @@
     
     // Cambia automáticamente las diapositivas cada 5 segundos (5000 milisegundos)
     setInterval(nextSlide, 5000);
+
+
+    // Selecciona todos los enlaces con la clase 'smooth-scroll'
+const links = document.querySelectorAll('.smooth-scroll');
+
+// Recorre todos los enlaces y agrega un event listener a cada uno
+links.forEach((link) => {
+  link.addEventListener('click', (event) => {
+    event.preventDefault(); // Evita el comportamiento predeterminado del enlace
+
+    const targetId = link.getAttribute('href'); // Obtiene el ID al que apunta el enlace
+
+    // Usa el método scrollTo para desplazarse de manera suave hasta la sección correspondiente
+    document.querySelector(targetId).scrollIntoView({
+      behavior: 'smooth' // Esto permite un desplazamiento suave
+    });
+  });
+});

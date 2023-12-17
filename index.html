@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>BDR - BANCO DE DATOS ROSARIO</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;800&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
@@ -16,9 +19,10 @@
         </div> 
         <nav id="navbar__navigation" class="navbar__navigation">
             <ul class="navbar__navigation--options">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Contactanos</a></li>
+                <li><a href="#" class="smooth-scroll">Inicio</a></li>
+                <li><a href="#nosotros" class="smooth-scroll">Nosotros</a></li>
+                <li><a href="#informes" class="smooth-scroll">Informes</a></li>
+                <li><a href="#contactanos" class="smooth-scroll">Contactanos</a></li>
             </ul>
         </nav>
     </header>
@@ -30,7 +34,7 @@
             </article>
         </section> -->
         <div class="slider">
-            <div class="slide active" style="background-image: url('./assets/img/rosario-bg.jpg');">
+            <div class="slide active" style="background-image: url('./assets/img/hands.jpg');">
                 <div class="hero__content">
                     <h1>Bienvenidos a BDR</h1>
                     <p>Su mayor aliado en el rubro inmobiliario</p>
@@ -42,7 +46,7 @@
                     <p>Su mayor aliado en el rubro inmobiliario</p>
                 </div>
             </div>
-            <div class="slide" style="background-image: url('./assets/img/rosario-bg.jpg');">
+            <div class="slide" style="background-image: url('./assets/img/hands.jpg');">
                 <div class="hero__content">
                     <h1>Bienvenidos a BDR</h1>
                     <p>Su mayor aliado en el rubro inmobiliario</p>
@@ -50,76 +54,80 @@
             </div>
         </div>
 
-        <section class="about-us container">
+        <section class="about-us container" id="nosotros">
             <article class="about-us__content">
                 <div class="about-us__content--text">
-                    <h2>Sobre Nosotros</h2>
-                    <p>
-                        En BDR brindamos un servicio integral para distintos profesionales y particulares que requieran saber y obtener asesoramiento sobre el estado de propiedades, personas y sociedades. <br><br>
-                        Efectuamos gestión e informes de verificación del estado del inmueble acompañados por fotocopia del asiento registral emitido por el Registro de la Propiedad y notificando si el inmueble fue presentado reiteradamente para ser usado como garantía. Realizamos informes patrimoniales, laborales y personales con información imprescindible para la toma de acciones. Nos caracterizamos por la rapidez y confiabilidad de nuestro servicio, brindando orientación en el antes y después de gestionar informes. <br>
-                        Nuestra oficina está ubicada en pleno microcentro, frente al Registro de la Propiedad de Rosario, optimizando tiempos y respuestas. <br><br>
-                    Trabajamos no sólo con el Registro de la Propiedad de la provincia de Santa Fe sino también con provincia de Buenos Aires, Ciudad Autónoma de Buenos Aires, Entre Ríos, Córdoba Chaco y Corrientes, ahorrándole costos y tiempos. Muy próximamente estamos sumando al resto del país.
-                    </p>
+                    <h2 class="title">Sobre Nosotros</h2>
+                    <p class="about-us__content--text1">En BDR brindamos un servicio integral para distintos profesionales y particulares que requieran saber y obtener asesoramiento sobre el estado de propiedades, personas y sociedades.</p>
+                    <p class="about-us__content--text2">Efectuamos gestión e informes de verificación del estado del inmueble acompañados por fotocopia del asiento registral emitido por el Registro de la Propiedad y notificando si el inmueble fue presentado reiteradamente para ser usado como garantía. Realizamos informes patrimoniales, laborales y personales con información imprescindible para la toma de acciones. Nos caracterizamos por la rapidez y confiabilidad de nuestro servicio, brindando orientación en el antes y después de gestionar informes.</p>
+                    <p class="about-us__content--text3">Nuestra oficina está ubicada en pleno microcentro, frente al Registro de la Propiedad de Rosario, optimizando tiempos y respuestas.</p>
+                    <p class="about-us__content--text4">Trabajamos no sólo con el Registro de la Propiedad de la provincia de Santa Fe sino también con provincia de Buenos Aires, Ciudad Autónoma de Buenos Aires, Entre Ríos, Córdoba Chaco y Corrientes, ahorrándole costos y tiempos. Muy próximamente estamos sumando al resto del país.</p>
                 </div>
-                <img src="./assets/img/rosario-bg.jpg" alt="">
+                <img src="./assets/img/house-keys.jpg" alt="">
             </article>
         </section>
 
         <section class="our-services container">
-            <h3>Nuestros Servicios</h3>
+            <h3 class="title">Nuestros Servicios</h3>
             <article class="our-services__content">
                 <div class="our-services__content--card">
-                    <img src="./assets/img/undraw_house_searching_re_stk8.svg" alt="">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, odio.</p>
+                    <img src="./assets/img/house.jpg" alt="">
+                    <p>Somos una empresa con 20 años de trayectoria en el sector inmobiliario que nació con el propósito de brindar un servicio de informes y asesoramiento de forma rápida y confiable a profesionales y particulares. A través de los años construimos una base de datos única en la región con el objeto de brindar un mejor servicio en la calidad de los informes.</p>
                 </div>
                 <div class="our-services__content--card">
-                    <img src="./assets/img/undraw_house_searching_re_stk8.svg" alt="">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, odio.</p>
+                    <img src="./assets/img/office-building.jpg" alt="">
+                    <p>Nuestra vocación está en compartir nuestro conocimiento con los clientes, ayudándolos a tomar decisiones mejor orientadas con un trato directo y rápido.</p>
                 </div>
                 <div class="our-services__content--card">
-                    <img src="./assets/img/undraw_house_searching_re_stk8.svg" alt="">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, odio.</p>
+                    <img src="./assets/img/home.jpg" alt="">
+                    <p>Entre quienes nos eligen se encuentran gran cantidad de corredores inmobiliarios, estudios de abogados, escribanías y particulares que año tras año vuelven a confiar en nosotros.</p>
                 </div>
             </article>
         </section>
 
-        <section class="tipes container">
-            <h3>Tipos de Informes</h3>
+        <section class="tipes container" id="informes">
+            <h3 class="title">Tipos de Informes</h3>
             <article class="tipes__content">
                 <div class="tipes__content--card">
                     <img src="./assets/img/undraw_house_searching_re_stk8.svg" alt="">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <h4>Informes de Dominio</h4>
+                    <p>Verificación del estado de la propiedad (hipotecas, venta, embargos, bien de familia).</p>
+                </div>
+                <div class="tipes__content--card">
+                    <img src="./assets/img/undraw_file_searching_re_3evy.svg" alt="">
+                    <h4>Informes Personales</h4>
+                    <p>Historial del cumplimiento de pago de los últimos años sobre las obligaciones contraídas de sociedades o personas físicas.</p>
+                </div>
+                <div class="tipes__content--card">
+                    <img src="./assets/img/undraw_reviewed_docs_re_9lmr.svg" alt="">
+                    <h4>Informes de Inhibicion</h4>
+                    <p>Verificación del estado del conjunto de los bienes de la persona física o jurídica.</p>
+                </div>
+                <div class="tipes__content--card">
+                    <img src="./assets/img/undraw_analytics_re_dkf8.svg" alt="">
+                    <h4>Informe Laboral</h4>
+                    <p>Permite conocer detalles de la situación laboral de la persona registrada.</p>
+                </div>
+                <div class="tipes__content--card">
+                    <img src="./assets/img/undraw_tourist_map_re_293e.svg" alt="">
+                    <h4>Informe Patrimonial</h4>
+                    <p>Búsqueda de propiedades que figuran a nombre de una persona.</p>
                 </div>
                 <div class="tipes__content--card">
                     <img src="./assets/img/undraw_house_searching_re_stk8.svg" alt="">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-                <div class="tipes__content--card">
-                    <img src="./assets/img/undraw_house_searching_re_stk8.svg" alt="">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-                <div class="tipes__content--card">
-                    <img src="./assets/img/undraw_house_searching_re_stk8.svg" alt="">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-                <div class="tipes__content--card">
-                    <img src="./assets/img/undraw_house_searching_re_stk8.svg" alt="">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-                <div class="tipes__content--card">
-                    <img src="./assets/img/undraw_house_searching_re_stk8.svg" alt="">
+                    <h4>Certificado</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
             </article>
         </section>
 
         <section class="image-section image-medium img-with-pattern">
-            <div class="background-image" style="background-image: url(./assets/img/office-bg.jpg)"></div>
+            <div class="background-image" style="background-image: url(./assets/img/rosario-bg.jpg)"></div>
         </section>
 
-        <section class="contact container">
+        <section class="contact container" id="contactanos">
             <article class="contact__social">
-                <h4>Contactanos</h4>
+                <h4 class="title">Contactanos</h4>
                 <div class="social-contact">
                     <a href="#">
                         <i class="bi bi-envelope"></i>
@@ -140,7 +148,7 @@
                 </div>
             </article>
             <form action="https://formsubmit.co/bdr@cpicon.com.ar" method="POST" class="contact__form">
-                <h4>Hacenos tu consulta</h4>
+                <h4 class="title">Hacenos tu consulta</h4>
                 <div class="contact__form--content">
                     <label for="name">Nombre y Apellido</label>
                     <input type="text" id="name" name="name" required>
