@@ -17,7 +17,8 @@
 /*------------------- *1. -- Root -- -----------------*/
 
 :root {
-    --primary-color: #105e4e
+    --primary-color: #105e4e;
+    --title-color: #edfff0ab;
 }
 
 /*------------------- *2. -- Reset -- -----------------*/
@@ -570,7 +571,7 @@ input, textarea {
 }
 
 .footer__navigation--social .social-contact p, .footer__navigation--social .social-contact i{
-    color: #edfff0ab;
+    color: var(--title-color);
 }
 
 @media screen and (min-width:576px) {
