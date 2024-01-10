@@ -435,6 +435,16 @@ ul, li {
     text-align: center;
 }
 
+.social-contact {
+    display: flex;
+    flex-direction: row;
+    text-align: start;
+    gap: .5rem;
+    text-decoration: none;
+    color: #283629;
+    min-width: 185px;
+}
+
 .social-contact a{
     display: flex;
     flex-direction: row;
